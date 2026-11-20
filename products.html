@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Products | Kordane Drives</title>
+<meta name="description" content="EPM-240-8P traction motor: 150 kW continuous, 220 kW peak, 800 V. Download the datasheet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#131C26" stroke-width="2.5"/><path d="M15 15 L15 2.5 A12.5 12.5 0 0 1 25.8 8.75Z" fill="#2340D9"/><path d="M15 15 L25.8 21.25 A12.5 12.5 0 0 1 15 27.5Z" fill="#C4753A"/><path d="M15 15 L4.2 21.25 A12.5 12.5 0 0 1 4.2 8.75Z" fill="#2F8F83"/><circle cx="15" cy="15" r="4" fill="#EDF0F2"/></svg>Kordane Drives</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="products.html" aria-current="page">Products</a><a href="technology.html">Technology</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+
+<div class="wrap page-title">
+  <h1 style="font-size:clamp(2.4rem,5vw,4.2rem)">Products</h1>
+  <p class="lead" style="margin-top:1rem">Our current motor and its datasheet.</p>
+</div>
+<div class="wrap">
+  <article class="product" id="epm-240-8p">
+    <div class="product-art"><img src="assets/motor.svg" alt="EPM-240-8P motor cross-section" width="640" height="640"></div>
+    <div>
+      <span class="code">EPM-240-8P</span>
+      <h2>Traction motor, 150&nbsp;kW continuous</h2>
+      <p style="margin-top:1rem">An 8-pole interior permanent-magnet synchronous motor for 800&nbsp;V drivetrains. It delivers 150&nbsp;kW continuously and 220&nbsp;kW at peak, with a maximum speed of 12&nbsp;000&nbsp;r/min. Water-glycol cooled and sealed to IP67.</p>
+      <table class="spec">
+        <tr><th>Continuous power</th><td>150 kW</td></tr>
+        <tr><th>Peak power</th><td>220 kW</td></tr>
+        <tr><th>DC-link voltage</th><td>800 V</td></tr>
+        <tr><th>Maximum speed</th><td>12 000 r/min</td></tr>
+        <tr><th>Cooling / protection</th><td>Water-glycol / IP67</td></tr>
+      </table>
+      <div class="download">
+        <a class="btn" href="datasheets/EPM-240-8P-datasheet.pdf" download><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v11m0 0l-4-4m4 4l4-4M3 17h14"/></svg>Download datasheet (PDF)</a>
+        <small>PDF, 21 pages, 0.7 MB</small>
+      </div>
+      <p class="notice">Test product. The datasheet contains fictional values and is not for engineering use.</p>
+    </div>
+  </article>
+</div>
+<!-- AI-READABLE SECTION: later, add a block here inside the article, after .download,
+     with the datasheet text (Markdown) embedded directly in the page. -->
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Kordane Drives</h4>
+      <p>Traction motors for electric vehicles and heavy-duty drivetrains.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="technology.html">Technology</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li>sales@kordane-drives.example</li><li>+00 000 000 0000</li></ul>
+    </div>
+    <p class="legal">Kordane Drives is a fictional company. This website and the EPM-240-8P datasheet are test material and contain made-up data. Not for engineering use.</p>
+  </div>
+</footer>
+<script>
+const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

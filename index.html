@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kordane Drives | Electric traction motors</title>
+<meta name="description" content="Kordane Drives builds liquid-cooled permanent-magnet traction motors for 800 V electric vehicles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#131C26" stroke-width="2.5"/><path d="M15 15 L15 2.5 A12.5 12.5 0 0 1 25.8 8.75Z" fill="#2340D9"/><path d="M15 15 L25.8 21.25 A12.5 12.5 0 0 1 15 27.5Z" fill="#C4753A"/><path d="M15 15 L4.2 21.25 A12.5 12.5 0 0 1 4.2 8.75Z" fill="#2F8F83"/><circle cx="15" cy="15" r="4" fill="#EDF0F2"/></svg>Kordane Drives</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="products.html">Products</a><a href="technology.html">Technology</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Traction motors built to run at 12&nbsp;000&nbsp;r/min.</h1>
+      <p class="lead">Kordane Drives designs and builds liquid-cooled permanent-magnet motors for 800&nbsp;V electric vehicles, from the rotor lamination to the resolver.</p>
+      <div class="actions">
+        <a class="btn" href="products.html">See the EPM-240-8P</a>
+        <a class="btn ghost" href="contact.html">Talk to sales</a>
+      </div>
+    </div>
+    <div class="hero-art"><img src="assets/motor.svg" alt="Cross-section of an 8-pole permanent-magnet motor with 48 stator slots" width="640" height="640"></div>
+  </div>
+  <div class="phases" aria-hidden="true"><i></i><i></i><i></i></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="facts">
+      <div class="fact"><b>150 kW</b><span>continuous output</span></div>
+      <div class="fact"><b>220 kW</b><span>peak output</span></div>
+      <div class="fact"><b>800 V</b><span>DC link</span></div>
+      <div class="fact"><b>IP67</b><span>sealed, water-glycol cooled</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>One motor family, documented down to the connector pins.</h2>
+      <p class="lead">Every Kordane motor ships with a full engineering datasheet: ratings, efficiency maps, thermal limits, control settings and interface data.</p>
+    </div>
+    <div class="cards" style="border-color:#B9C4CE">
+      <div class="card"><h3>Traction motors</h3><p>Interior permanent-magnet machines for passenger and light commercial vehicles.</p></div>
+      <div class="card"><h3>Liquid cooling</h3><p>Water-glycol jacket designed for stable winding and magnet temperatures under sustained load.</p></div>
+      <div class="card"><h3>Ready for your inverter</h3><p>Resolver feedback, temperature sensors and a sealed 12-way signal connector.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div><h2>Download the datasheet, check the numbers.</h2></div>
+    <div>
+      <p class="lead">The EPM-240-8P datasheet is available as a PDF on the products page.</p>
+      <a class="btn" href="products.html">Go to products</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Kordane Drives</h4>
+      <p>Traction motors for electric vehicles and heavy-duty drivetrains.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="technology.html">Technology</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li>sales@kordane-drives.example</li><li>+00 000 000 0000</li></ul>
+    </div>
+    <p class="legal">Kordane Drives is a fictional company. This website and the EPM-240-8P datasheet are test material and contain made-up data. Not for engineering use.</p>
+  </div>
+</footer>
+<script>
+const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

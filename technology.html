@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Technology | Kordane Drives</title>
+<meta name="description" content="Interior permanent magnets, field weakening and thermal design in Kordane traction motors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#131C26" stroke-width="2.5"/><path d="M15 15 L15 2.5 A12.5 12.5 0 0 1 25.8 8.75Z" fill="#2340D9"/><path d="M15 15 L25.8 21.25 A12.5 12.5 0 0 1 15 27.5Z" fill="#C4753A"/><path d="M15 15 L4.2 21.25 A12.5 12.5 0 0 1 4.2 8.75Z" fill="#2F8F83"/><circle cx="15" cy="15" r="4" fill="#EDF0F2"/></svg>Kordane Drives</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="products.html">Products</a><a href="technology.html" aria-current="page">Technology</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+
+<div class="wrap page-title">
+  <h1 style="font-size:clamp(2.4rem,5vw,4.2rem)">Technology</h1>
+  <p class="lead" style="margin-top:1rem">How our motors are built and what makes them efficient.</p>
+</div>
+<section style="padding-top:1rem">
+  <div class="wrap cards">
+    <div class="card"><h3>Interior permanent magnets</h3><p>Magnets sit inside the rotor core. This gives a strong reluctance torque on top of the magnet torque, so the motor holds its power across a wide speed range.</p></div>
+    <div class="card"><h3>Field weakening</h3><p>At high speed the inverter reduces the magnet field. The motor keeps running well beyond its base speed without exceeding the DC-link voltage.</p></div>
+    <div class="card"><h3>Thermal design</h3><p>A water-glycol jacket and temperature sensors in the winding let the controller derate smoothly instead of tripping.</p></div>
+  </div>
+</section>
+<section class="dark">
+  <div class="wrap split">
+    <div><h2>Built to be controlled.</h2></div>
+    <div>
+      <p class="lead">Each motor has a resolver for rotor position and NTC sensors for temperature. Current-loop and protection settings are listed in the datasheet so your control team can start from known values.</p>
+      <p><a href="products.html">View the datasheet on the products page</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Kordane Drives</h4>
+      <p>Traction motors for electric vehicles and heavy-duty drivetrains.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="technology.html">Technology</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li>sales@kordane-drives.example</li><li>+00 000 000 0000</li></ul>
+    </div>
+    <p class="legal">Kordane Drives is a fictional company. This website and the EPM-240-8P datasheet are test material and contain made-up data. Not for engineering use.</p>
+  </div>
+</footer>
+<script>
+const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>
