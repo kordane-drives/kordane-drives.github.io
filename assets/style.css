@@ -125,3 +125,6 @@ textarea{min-height:140px;resize:vertical}
   .nav a{padding:.8rem 0;border-bottom:1px solid var(--line)}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* AI-readable datasheet (products page) */
+.ai-readable .md-embed{margin:0;background:#0C131B;color:#D7DEE5;padding:1.4rem;overflow:auto;max-height:70vh;font:.82rem/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre;border:1px solid rgba(255,255,255,.18)}
