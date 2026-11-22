@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EPM-240-8P datasheet | Kordane Drives</title>
+<meta name="description" content="Full EPM-240-8P traction motor datasheet in HTML: ratings, torque-speed envelope, electrical data, losses, thermal, cooling, mechanical, bearings, control and interfaces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.datasheet{padding-top:clamp(2.5rem,6vw,4.5rem);padding-bottom:5rem}
+.datasheet h1{font-size:clamp(2rem,4.4vw,3.4rem);margin-bottom:1.2rem;max-width:20ch}
+.datasheet h2{font-size:clamp(1.4rem,2.4vw,1.9rem);margin:3.2rem 0 .5rem;padding-top:1.2rem;border-top:2px solid var(--ink);scroll-margin-top:84px}
+.datasheet blockquote{margin:1.2rem 0;border-left:4px solid var(--copper);background:#fff;padding:.8rem 1rem;max-width:70ch}
+.datasheet blockquote p{margin:0}
+.datasheet ul{max-width:72ch;padding-left:1.2rem}
+.datasheet li{margin-bottom:.4rem}
+.datasheet code{font-size:.9em;background:var(--steel);padding:.05em .3em}
+.datasheet .actions{display:flex;flex-wrap:wrap;gap:.9rem;margin:1.4rem 0 .5rem}
+.table-wrap{overflow-x:auto;margin:1rem 0 1.4rem;border:1px solid var(--line);background:#fff}
+.table-wrap table{border-collapse:collapse;width:100%;font-size:.88rem;line-height:1.35}
+.table-wrap th,.table-wrap td{padding:.5rem .7rem;border-bottom:1px solid var(--line);border-right:1px solid var(--line);text-align:left;vertical-align:top;white-space:nowrap}
+.table-wrap thead th{background:var(--ink);color:#fff;font-weight:600;border-right-color:rgba(255,255,255,.2)}
+.table-wrap td.num{text-align:right}
+.table-wrap tbody tr:nth-child(even){background:#F4F6F8}
+.table-wrap td a{font-weight:600}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#131C26" stroke-width="2.5"/><path d="M15 15 L15 2.5 A12.5 12.5 0 0 1 25.8 8.75Z" fill="#2340D9"/><path d="M15 15 L25.8 21.25 A12.5 12.5 0 0 1 15 27.5Z" fill="#C4753A"/><path d="M15 15 L4.2 21.25 A12.5 12.5 0 0 1 4.2 8.75Z" fill="#2F8F83"/><circle cx="15" cy="15" r="4" fill="#EDF0F2"/></svg>Kordane Drives</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main"><a href="index.html">Home</a><a href="products.html" aria-current="page">Products</a><a href="technology.html">Technology</a><a href="company.html">Company</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main>
+<article class="wrap datasheet">
+<div class="actions"><a class="btn" href="datasheets/EPM-240-8P-datasheet.pdf" download>Download datasheet (PDF)</a><a class="btn ghost" href="products.html">Back to products</a></div>
+<h1>EPM-240-8P - Synthetic traction motor datasheet</h1>
+<p><strong>OCR benchmark edition 1.0 | 20 tables | Fictional engineering data</strong></p>
+<blockquote>
+<p><strong>Important:</strong> this document is entirely synthetic and intended only for OCR / table-structure benchmarking. It is not a real manufacturer datasheet, is not electrically or mechanically validated, and must not be used for design, procurement, test certification, or wiring.</p>
+</blockquote>
+<h2>Benchmark conventions</h2>
+<ul>
+<li>PDF and HTML preserve original merged cells using native <code>rowspan</code> / <code>colspan</code>.</li>
+<li>In this Markdown edition, every merged cell is expanded by repeating its text into each covered cell. Repeated strings therefore intentionally encode merged regions.</li>
+<li>Multi-row headers remain separate Markdown rows; header-group labels are repeated across their child columns.</li>
+<li>Decimal point is used as decimal separator; thin spaces separate thousands. Parentheses, <code>±</code>, <code>≤</code>, <code>≥</code>, <code>≈</code>, Greek symbols, Unicode subscripts/superscripts and SI units are intentional OCR challenges.</li>
+<li>A dash (<code>—</code>) means not applicable / not stated, not zero. <code>∞</code> means continuous / no imposed time limit in the synthetic test definition.</li>
+</ul>
+<h2>Document index</h2>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">ID</th><th scope="col">Table</th><th scope="col">Columns</th></tr>
+</thead><tbody>
+<tr><td><a href="#t01">T01</a></td><td>General ratings and identification</td><td class="num">6</td></tr>
+<tr><td><a href="#t02">T02</a></td><td>Torque-speed operating envelope</td><td class="num">8</td></tr>
+<tr><td><a href="#t03">T03</a></td><td>Rated and overload duty points</td><td class="num">7</td></tr>
+<tr><td><a href="#t04">T04</a></td><td>Electrical ratings and terminal quantities</td><td class="num">8</td></tr>
+<tr><td><a href="#t05">T05</a></td><td>Stator winding and slot / pole layout</td><td class="num">7</td></tr>
+<tr><td><a href="#t06">T06</a></td><td>Equivalent-circuit parameters versus temperature</td><td class="num">7</td></tr>
+<tr><td><a href="#t07">T07</a></td><td>dq-axis operating map samples</td><td class="num">8</td></tr>
+<tr><td><a href="#t08">T08</a></td><td>Back-EMF and air-gap flux harmonics</td><td class="num">6</td></tr>
+<tr><td><a href="#t09">T09</a></td><td>Efficiency map - motoring</td><td class="num">7</td></tr>
+<tr><td><a href="#t10">T10</a></td><td>Loss breakdown versus speed and load</td><td class="num">8</td></tr>
+<tr><td><a href="#t11">T11</a></td><td>Thermal network and temperature limits</td><td class="num">7</td></tr>
+<tr><td><a href="#t12">T12</a></td><td>Liquid-cooling circuit characteristics</td><td class="num">8</td></tr>
+<tr><td><a href="#t13">T13</a></td><td>Insulation system and dielectric verification</td><td class="num">8</td></tr>
+<tr><td><a href="#t14">T14</a></td><td>Mechanical envelope and dimensional tolerances</td><td class="num">8</td></tr>
+<tr><td><a href="#t15">T15</a></td><td>Bearing arrangement, fits and lubrication</td><td class="num">6</td></tr>
+<tr><td><a href="#t16">T16</a></td><td>Rotor and permanent-magnet material data</td><td class="num">8</td></tr>
+<tr><td><a href="#t17">T17</a></td><td>Vibration and acoustic order spectrum</td><td class="num">8</td></tr>
+<tr><td><a href="#t18">T18</a></td><td>Control and protection calibration values</td><td class="num">8</td></tr>
+<tr><td><a href="#t19">T19</a></td><td>Sensor pinout and signal conditioning</td><td class="num">8</td></tr>
+<tr><td><a href="#t20">T20</a></td><td>Environmental, reliability and interface qualification</td><td class="num">8</td></tr>
+</tbody></table></div>
+<h2 id="t01">T01 - General ratings and identification</h2>
+<p>Nameplate data, rated operating point and declared tolerances</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Property family</th><th scope="col">Characteristic</th><th scope="colgroup" colspan="2">Nominal value</th><th scope="colgroup" colspan="2">Permitted / operating range</th></tr>
+<tr><th scope="col">Property family</th><th scope="col">Characteristic</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Lower</th><th scope="col">Upper</th></tr>
+</thead><tbody>
+<tr><td>Identification</td><td>Machine designation</td><td>EPM-240-8P</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Identification</td><td>Frame / revision</td><td>245-L180 / Rev. C.4</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Identification</td><td>Serial number format</td><td>X8-26-000000</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Rated output</td><td>Continuous mechanical power</td><td>150</td><td>kW</td><td>0</td><td>150</td></tr>
+<tr><td>Rated output</td><td>Peak mechanical power</td><td>220</td><td>kW</td><td>0</td><td>220</td></tr>
+<tr><td>Rated output</td><td>Rated shaft torque</td><td>238.7</td><td>N·m</td><td>0</td><td>238.7</td></tr>
+<tr><td>Rated output</td><td>Rated speed</td><td>6 000</td><td>r/min</td><td>0</td><td>12 000</td></tr>
+<tr><td>Supply</td><td>DC-link voltage, U<sub>DC</sub></td><td>800</td><td>V</td><td>650</td><td>900</td></tr>
+<tr><td>Supply</td><td>Number of phases</td><td>3</td><td>—</td><td>3</td><td>3</td></tr>
+<tr><td>Supply</td><td>Pole / slot count</td><td>8 / 48</td><td>—</td><td>8 / 48</td><td>8 / 48</td></tr>
+<tr><td>Construction</td><td>Cooling / protection</td><td>Water-glycol / IP67</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Construction</td><td>Insulation / thermal class</td><td>Class 200 (R)</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Construction</td><td>Approximate mass</td><td>82.0 ± 2.0</td><td>kg</td><td>80.0</td><td>84.0</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> All values are synthetic. “—” denotes not applicable or not specified; it is not a zero value.</p>
+<h2 id="t02">T02 - Torque-speed operating envelope</h2>
+<p>Motoring and regenerative quadrants; positive speed convention</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Operating mode</th><th scope="col">Speed region</th><th scope="colgroup" colspan="2">Speed n</th><th scope="colgroup" colspan="2">Shaft torque T<sub>m</sub></th><th scope="colgroup" colspan="2">Mechanical power P<sub>m</sub></th></tr>
+<tr><th scope="col">Operating mode</th><th scope="col">Speed region</th><th scope="col">From</th><th scope="col">To</th><th scope="col">Min.</th><th scope="col">Max.</th><th scope="col">Min.</th><th scope="col">Max.</th></tr>
+</thead><tbody>
+<tr><td>Motoring</td><td>Constant torque</td><td>0</td><td>3 000</td><td>0</td><td>520</td><td>0</td><td>163.4</td></tr>
+<tr><td>Motoring</td><td>Constant power</td><td>3 000</td><td>6 000</td><td>238.7</td><td>477.5</td><td>150.0</td><td>150.0</td></tr>
+<tr><td>Motoring</td><td>Field weakening</td><td>6 000</td><td>12 000</td><td>119.4</td><td>238.7</td><td>150.0</td><td>220.0</td></tr>
+<tr><td>Motoring</td><td>Overspeed (no load)</td><td>12 000</td><td>13 200</td><td>0</td><td>12</td><td>0</td><td>16.6</td></tr>
+<tr><td>Regeneration</td><td>Continuous regen</td><td>0</td><td>6 000</td><td>-180</td><td>0</td><td>-113.1</td><td>0</td></tr>
+<tr><td>Regeneration</td><td>Peak regen</td><td>0</td><td>4 000</td><td>-420</td><td>0</td><td>-175.9</td><td>0</td></tr>
+<tr><td>Coast / open circuit</td><td>All speeds</td><td>0</td><td>12 000</td><td>≈ 0</td><td>≈ 0</td><td>≈ 0</td><td>≈ 0</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Peak values are time-limited; simultaneous maximum speed, torque and power are not guaranteed.</p>
+<h2 id="t03">T03 - Rated and overload duty points</h2>
+<p>Discrete test points for dynamometer setup and thermal-soak checks</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Test block</th><th scope="col">Point</th><th scope="col">n [r/min]</th><th scope="col">T<sub>m</sub> [N·m]</th><th scope="col">P<sub>m</sub> [kW]</th><th scope="col">Duration [s]</th><th scope="col">Duty description</th></tr>
+</thead><tbody>
+<tr><td>Continuous</td><td>CP-01</td><td>6 000</td><td>238.7</td><td>150.0</td><td>∞</td><td>S1 reference</td></tr>
+<tr><td>Continuous</td><td>CP-02</td><td>3 000</td><td>477.5</td><td>150.0</td><td>∞</td><td>Low-speed thermal limit</td></tr>
+<tr><td>Continuous</td><td>CP-03</td><td>12 000</td><td>119.4</td><td>150.0</td><td>∞</td><td>High-speed field weakening</td></tr>
+<tr><td>Overload</td><td>OL-10</td><td>2 000</td><td>520</td><td>108.9</td><td>60</td><td>10 min cycle; 10% duty</td></tr>
+<tr><td>Overload</td><td>OL-30</td><td>4 000</td><td>500</td><td>209.4</td><td>30</td><td>30 s pulse; 5 min rest</td></tr>
+<tr><td>Overload</td><td>OL-05</td><td>8 000</td><td>262.6</td><td>220.0</td><td>5</td><td>Peak-power validation</td></tr>
+<tr><td>Regenerative</td><td>RG-01</td><td>3 000</td><td>-420</td><td>-131.9</td><td>20</td><td>DC-link absorption enabled</td></tr>
+<tr><td>Regenerative</td><td>RG-02</td><td>6 000</td><td>-180</td><td>-113.1</td><td>∞</td><td>Continuous regen reference</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> P<sub>m</sub> = 2πnT<sub>m</sub>/60 000. Sign convention: motoring power and torque are positive; generating values are negative.</p>
+<h2 id="t04">T04 - Electrical ratings and terminal quantities</h2>
+<p>Three-phase quantities; RMS values unless explicitly marked peak</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Quantity group</th><th scope="col">Parameter</th><th scope="col">Symbol</th><th scope="colgroup" colspan="2">Rated</th><th scope="colgroup" colspan="2">Short-time / limit</th><th scope="col">Unit</th></tr>
+<tr><th scope="col">Quantity group</th><th scope="col">Parameter</th><th scope="col">Symbol</th><th scope="col">Nominal</th><th scope="col">Tolerance</th><th scope="col">Maximum</th><th scope="col">Condition</th><th scope="col">Unit</th></tr>
+</thead><tbody>
+<tr><td>DC bus</td><td>Link voltage</td><td>U<sub>DC</sub></td><td>800</td><td>± 5</td><td>900</td><td>V</td><td>At inverter terminals</td></tr>
+<tr><td>DC bus</td><td>Undervoltage threshold</td><td>U<sub>UV</sub></td><td>620</td><td>± 10</td><td>—</td><td>—</td><td>V</td></tr>
+<tr><td>DC bus</td><td>Overvoltage trip</td><td>U<sub>OV</sub></td><td>—</td><td>—</td><td>930</td><td>V</td><td>Trip, 50 ms debounce</td></tr>
+<tr><td>AC side</td><td>Phase current, continuous</td><td>I<sub>ph,rms</sub></td><td>250</td><td>± 3%</td><td>250</td><td>A</td><td>At 120 °C winding</td></tr>
+<tr><td>AC side</td><td>Phase current, peak</td><td>I<sub>ph,pk</sub></td><td>520</td><td>± 5%</td><td>520</td><td>A</td><td>≤ 10 s</td></tr>
+<tr><td>AC side</td><td>Fundamental phase voltage</td><td>U<sub>ph,1</sub></td><td>265</td><td>± 4</td><td>310</td><td>V</td><td>At base speed</td></tr>
+<tr><td>Frequency</td><td>Electrical at 6 000 r/min</td><td>f<sub>e</sub></td><td>400</td><td>± 1</td><td>—</td><td>Hz</td><td>p = 4 pole pairs</td></tr>
+<tr><td>Frequency</td><td>Electrical at 12 000 r/min</td><td>f<sub>e,max</sub></td><td>800</td><td>± 2</td><td>880</td><td>Hz</td><td>Overspeed excluded</td></tr>
+<tr><td>Power quality</td><td>Power factor</td><td>cos φ</td><td>0.96</td><td>± 0.02</td><td>—</td><td>—</td><td>At rated point</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> For balanced sinusoidal operation: P<sub>1</sub> = √3 U<sub>LL</sub>I<sub>L</sub>cosφ. “Peak” current is instantaneous phase-current magnitude.</p>
+<h2 id="t05">T05 - Stator winding and slot / pole layout</h2>
+<p>Geometric winding specification and phase-belt assignment</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Stator section</th><th scope="col">Feature</th><th scope="colgroup" colspan="2">Overall</th><th scope="col">Phase A</th><th scope="col">Phase B</th><th scope="col">Phase C</th></tr>
+<tr><th scope="col">Stator section</th><th scope="col">Feature</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Value</th><th scope="col">Value</th><th scope="col">Value</th></tr>
+</thead><tbody>
+<tr><td>Topology</td><td>Slot / pole count</td><td>48 / 8</td><td>—</td><td>16 slots</td><td>16 slots</td><td>16 slots</td></tr>
+<tr><td>Topology</td><td>Slots per pole per phase, q</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Topology</td><td>Coil pitch</td><td>5 / 6</td><td>slot</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Topology</td><td>Winding factor, k<sub>w1</sub></td><td>0.948</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Conductor</td><td>Parallel paths</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Conductor</td><td>Turns per phase, N<sub>ph</sub></td><td>48</td><td>turn</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Conductor</td><td>Copper area per slot</td><td>18.4</td><td>mm²</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td>Insulation</td><td>Slot liner thickness</td><td>0.30</td><td>mm</td><td>Class 200</td><td>Class 200</td><td>Class 200</td></tr>
+<tr><td>Insulation</td><td>Phase separation</td><td>Double</td><td>—</td><td>A-B</td><td>B-C</td><td>C-A</td></tr>
+<tr><td>Connection</td><td>Winding connection</td><td>Star (Y)</td><td>—</td><td>Neutral floating</td><td>Neutral floating</td><td>Neutral floating</td></tr>
+<tr><td>Connection</td><td>Terminal resistance at 20 °C</td><td>R<sub>LL,20</sub> = 18.6</td><td>mΩ</td><td>6.20 mΩ/phase</td><td>6.20 mΩ/phase</td><td>6.20 mΩ/phase</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Slot / phase allocation shown as aggregate counts; detailed coil-side numbering is intentionally omitted in this synthetic example.</p>
+<h2 id="t06">T06 - Equivalent-circuit parameters versus temperature</h2>
+<p>Per-phase fundamental-frequency parameters; star-equivalent values</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Parameter class</th><th scope="col">Parameter</th><th scope="col">Symbol</th><th scope="col">20 °C</th><th scope="col">100 °C</th><th scope="col">160 °C</th><th scope="col">Unit</th></tr>
+</thead><tbody>
+<tr><td>Resistance</td><td>DC phase resistance</td><td>R<sub>s,dc</sub></td><td>6.20</td><td>8.15</td><td>9.62</td><td>mΩ</td></tr>
+<tr><td>Resistance</td><td>AC phase resistance at 400 Hz</td><td>R<sub>s,ac</sub></td><td>7.10</td><td>9.34</td><td>11.02</td><td>mΩ</td></tr>
+<tr><td>Inductance</td><td>Direct-axis inductance</td><td>L<sub>d</sub></td><td>0.285</td><td>0.279</td><td>0.274</td><td>mH</td></tr>
+<tr><td>Inductance</td><td>Quadrature-axis inductance</td><td>L<sub>q</sub></td><td>0.612</td><td>0.598</td><td>0.584</td><td>mH</td></tr>
+<tr><td>Inductance</td><td>Zero-sequence inductance</td><td>L<sub>0</sub></td><td>0.041</td><td>0.041</td><td>0.040</td><td>mH</td></tr>
+<tr><td>Magnetic</td><td>PM flux linkage at 25 °C</td><td>ψ<sub>PM</sub></td><td>0.118</td><td>0.114</td><td>0.109</td><td>Wb</td></tr>
+<tr><td>Magnetic</td><td>Reluctance saliency ratio</td><td>L<sub>q</sub>/L<sub>d</sub></td><td>2.15</td><td>2.14</td><td>2.13</td><td>—</td></tr>
+<tr><td>Derived</td><td>Copper temperature coefficient</td><td>α<sub>Cu</sub></td><td>0.00393</td><td>—</td><td>—</td><td>K⁻¹</td></tr>
+<tr><td>Derived</td><td>Time constant at 20 °C</td><td>τ = L<sub>d</sub>/R<sub>s</sub></td><td>46.0</td><td>—</td><td>—</td><td>ms</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Resistance correction: R(T) = R(T₀)[1 + α<sub>Cu</sub>(T − T₀)]. Values are illustrative and do not replace measured parameter identification.</p>
+<h2 id="t07">T07 - dq-axis operating map samples</h2>
+<p>Selected current vectors for MTPA and field-weakening regions</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Region</th><th scope="col">Point</th><th scope="col">n [r/min]</th><th scope="col">i<sub>d</sub> [A]</th><th scope="col">i<sub>q</sub> [A]</th><th scope="col">β [electrical °]</th><th scope="col">T<sub>e</sub> [N·m]</th><th scope="col">V<sub>s</sub> [V rms]</th></tr>
+</thead><tbody>
+<tr><td>MTPA</td><td>M-01</td><td>500</td><td>-34</td><td>180</td><td>-79.3</td><td>168</td><td>74</td></tr>
+<tr><td>MTPA</td><td>M-02</td><td>1 500</td><td>-71</td><td>320</td><td>-77.5</td><td>292</td><td>183</td></tr>
+<tr><td>MTPA</td><td>M-03</td><td>3 000</td><td>-112</td><td>440</td><td>-75.7</td><td>510</td><td>262</td></tr>
+<tr><td>MTPA</td><td>M-04</td><td>3 000</td><td>-126</td><td>500</td><td>-75.9</td><td>520</td><td>286</td></tr>
+<tr><td>Field weakening</td><td>FW-01</td><td>6 000</td><td>-210</td><td>330</td><td>-122.5</td><td>239</td><td>298</td></tr>
+<tr><td>Field weakening</td><td>FW-02</td><td>9 000</td><td>-285</td><td>210</td><td>-143.6</td><td>171</td><td>301</td></tr>
+<tr><td>Field weakening</td><td>FW-03</td><td>12 000</td><td>-315</td><td>145</td><td>-157.2</td><td>119</td><td>307</td></tr>
+<tr><td>Regeneration</td><td>RG-03</td><td>4 000</td><td>-64</td><td>-390</td><td>-99.3</td><td>-402</td><td>276</td></tr>
+<tr><td>Regeneration</td><td>RG-04</td><td>8 000</td><td>-180</td><td>-210</td><td>-130.6</td><td>-178</td><td>305</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Park convention: i<sub>d</sub> is negative in field weakening. β = atan2(i<sub>q</sub>, i<sub>d</sub>) according to the stated sign convention.</p>
+<h2 id="t08">T08 - Back-EMF and air-gap flux harmonics</h2>
+<p>Open-circuit line-to-line voltage at 1 000 r/min, 25 °C rotor temperature</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Signal</th><th scope="col">Component</th><th scope="col">Order h</th><th scope="col">Frequency [Hz]</th><th scope="col">Amplitude [V rms]</th><th scope="col">Relative level [%]</th></tr>
+</thead><tbody>
+<tr><td>E<sub>LL</sub></td><td>Fundamental</td><td>1</td><td>66.67</td><td>38.4</td><td>100.00</td></tr>
+<tr><td>E<sub>LL</sub></td><td>3rd harmonic</td><td>3</td><td>200.00</td><td>0.18</td><td>0.47</td></tr>
+<tr><td>E<sub>LL</sub></td><td>5th harmonic</td><td>5</td><td>333.33</td><td>1.12</td><td>2.92</td></tr>
+<tr><td>E<sub>LL</sub></td><td>7th harmonic</td><td>7</td><td>466.67</td><td>0.76</td><td>1.98</td></tr>
+<tr><td>E<sub>LL</sub></td><td>11th harmonic</td><td>11</td><td>733.33</td><td>0.31</td><td>0.81</td></tr>
+<tr><td>Air-gap B<sub>r</sub></td><td>Fundamental peak</td><td>1</td><td>—</td><td>0.82</td><td>100.00</td></tr>
+<tr><td>Air-gap B<sub>r</sub></td><td>5th spatial harmonic</td><td>5</td><td>—</td><td>0.024</td><td>2.93</td></tr>
+<tr><td>Air-gap B<sub>r</sub></td><td>7th spatial harmonic</td><td>7</td><td>—</td><td>0.015</td><td>1.83</td></tr>
+<tr><td>THD, line-line</td><td>THD = √ΣE<sub>h</sub>²/E<sub>1</sub></td><td>—</td><td>—</td><td>3.72</td><td>%</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Voltage amplitudes scale approximately with speed under open-circuit conditions; harmonic phase angles are not included.</p>
+<h2 id="t09">T09 - Efficiency map - motoring</h2>
+<p>η = Pshaft / Pdc; stabilized coolant at 65 °C and UDC = 800 V</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Load torque T/T<sub>rated</sub></th><th scope="colgroup" colspan="6">Speed band</th></tr>
+<tr><th scope="col">Load torque T/T<sub>rated</sub></th><th scope="col">1 000 rpm</th><th scope="col">2 000 rpm</th><th scope="col">4 000 rpm</th><th scope="col">6 000 rpm</th><th scope="col">8 000 rpm</th><th scope="col">12 000 rpm</th></tr>
+</thead><tbody>
+<tr><td>10 %</td><td>84.1 %</td><td>88.7 %</td><td>90.8 %</td><td>90.1 %</td><td>88.2 %</td><td>82.5 %</td></tr>
+<tr><td>20 %</td><td>89.4 %</td><td>92.6 %</td><td>94.8 %</td><td>94.2 %</td><td>92.1 %</td><td>87.0 %</td></tr>
+<tr><td>40 %</td><td>92.1 %</td><td>95.0 %</td><td>96.4 %</td><td>96.8 %</td><td>95.6 %</td><td>91.3 %</td></tr>
+<tr><td>60 %</td><td>92.8 %</td><td>95.7 %</td><td>96.9 %</td><td>97.1 %</td><td>96.4 %</td><td>92.8 %</td></tr>
+<tr><td>80 %</td><td>92.5 %</td><td>95.4 %</td><td>96.8 %</td><td>97.2 %</td><td>96.6 %</td><td>93.0 %</td></tr>
+<tr><td>100 %</td><td>91.9 %</td><td>95.0 %</td><td>96.5 %</td><td>97.0 %</td><td>96.1 %</td><td>92.4 %</td></tr>
+<tr><td>120 %</td><td>90.2 %</td><td>94.1 %</td><td>95.9 %</td><td>96.2 %</td><td>94.8 %</td><td>90.1 %</td></tr>
+<tr><td colspan="7">Measurement status: interpolated grid; cells within ±0.4 percentage points (pp)</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Cells are efficiency percentages, not absolute power. Values below 10% torque are excluded from the map.</p>
+<h2 id="t10">T10 - Loss breakdown versus speed and load</h2>
+<p>Estimated steady-state loss partition at 65 °C inlet coolant</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Load case</th><th scope="col">n [r/min]</th><th scope="col">Pout [kW]</th><th scope="colgroup" colspan="2">Copper losses</th><th scope="colgroup" colspan="2">Iron losses</th><th scope="col">Other losses</th></tr>
+<tr><th scope="col">Load case</th><th scope="col">n [r/min]</th><th scope="col">Pout [kW]</th><th scope="col">P<sub>Cu</sub> [kW]</th><th scope="col">Share [%]</th><th scope="col">P<sub>Fe</sub> [kW]</th><th scope="col">Share [%]</th><th scope="col">P<sub>misc</sub> [kW]</th></tr>
+</thead><tbody>
+<tr><td>Low speed</td><td>1 500</td><td>25.0</td><td>0.82</td><td>37.6</td><td>0.31</td><td>14.2</td><td>1.05</td></tr>
+<tr><td>Low speed</td><td>2 500</td><td>65.0</td><td>1.46</td><td>42.0</td><td>0.58</td><td>16.7</td><td>1.44</td></tr>
+<tr><td>Base speed</td><td>6 000</td><td>150.0</td><td>2.05</td><td>38.0</td><td>1.24</td><td>23.0</td><td>2.11</td></tr>
+<tr><td>Base speed</td><td>7 500</td><td>180.0</td><td>2.41</td><td>40.1</td><td>1.72</td><td>28.6</td><td>1.88</td></tr>
+<tr><td>High speed</td><td>10 000</td><td>180.0</td><td>1.88</td><td>32.8</td><td>2.36</td><td>41.2</td><td>1.49</td></tr>
+<tr><td>High speed</td><td>12 000</td><td>150.0</td><td>1.54</td><td>28.1</td><td>2.84</td><td>51.8</td><td>1.10</td></tr>
+<tr><td>Total at rated point / 6 000 r/min</td><td>Total at rated point / 6 000 r/min</td><td>150.0</td><td>2.05</td><td>38.0</td><td>1.24</td><td>23.0</td><td>2.11</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Other losses include magnet eddy-current, mechanical, stray-load and windage components. Share denominator: total motor loss, not Pout.</p>
+<h2 id="t11">T11 - Thermal network and temperature limits</h2>
+<p>Lumped thermal nodes used by the supervisory derating model</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Thermal zone</th><th scope="col">Node / component</th><th scope="col">C<sub>th</sub> [J/K]</th><th scope="col">R<sub>th</sub> to coolant [K/W]</th><th scope="col">Continuous limit [°C]</th><th scope="col">Transient limit [°C]</th><th scope="col">Sensor tag</th></tr>
+</thead><tbody>
+<tr><td>Stator</td><td>Copper hot spot</td><td>2 850</td><td>0.036</td><td>180</td><td>200 / 10 s</td><td>NTC-W1</td></tr>
+<tr><td>Stator</td><td>Slot liner</td><td>1 220</td><td>0.052</td><td>155</td><td>180 / 60 s</td><td>NTC-S2</td></tr>
+<tr><td>Stator</td><td>Stator yoke</td><td>4 600</td><td>0.028</td><td>150</td><td>165 / 60 s</td><td>NTC-S3</td></tr>
+<tr><td>Rotor</td><td>Permanent magnet</td><td>1 480</td><td>0.091</td><td>150</td><td>165 / 5 s</td><td>EST-R1</td></tr>
+<tr><td>Rotor</td><td>Rotor core</td><td>3 200</td><td>0.074</td><td>180</td><td>200 / 10 s</td><td>EST-R2</td></tr>
+<tr><td>Rotor</td><td>Shaft</td><td>1 050</td><td>0.063</td><td>160</td><td>180 / 60 s</td><td>—</td></tr>
+<tr><td>Coolant</td><td>Inlet manifold</td><td>—</td><td>—</td><td>65</td><td>75 / 30 s</td><td>NTC-CI</td></tr>
+<tr><td>Coolant</td><td>Outlet manifold</td><td>—</td><td>—</td><td>85</td><td>95 / 10 s</td><td>NTC-CO</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> R<sub>th</sub> values are equivalent fitted values for the synthetic thermal model; they are not directly additive across parallel heat paths.</p>
+<h2 id="t12">T12 - Liquid-cooling circuit characteristics</h2>
+<p>Water / ethylene-glycol mixture 50:50 by volume; nominal inlet 65 °C</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Circuit segment</th><th scope="col">Quantity</th><th scope="colgroup" colspan="3">Nominal</th><th scope="col">Minimum</th><th scope="col">Maximum</th><th scope="col">Acceptance / note</th></tr>
+<tr><th scope="col">Circuit segment</th><th scope="col">Quantity</th><th scope="col">Symbol</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Value</th><th scope="col">Value</th><th scope="col">Acceptance / note</th></tr>
+</thead><tbody>
+<tr><td>Pump</td><td>Volumetric flow</td><td>Q̇</td><td>12.0</td><td>L/min</td><td>8.0</td><td>16.0</td><td>No air entrainment</td></tr>
+<tr><td>Pump</td><td>Inlet pressure</td><td>p<sub>in</sub></td><td>180</td><td>kPa(g)</td><td>120</td><td>250</td><td>kPa(g)</td></tr>
+<tr><td>Pump</td><td>Coolant inlet temperature</td><td>T<sub>in</sub></td><td>65</td><td>°C</td><td>−20</td><td>80</td><td>°C</td></tr>
+<tr><td>Motor jacket</td><td>Pressure drop at 12 L/min</td><td>Δp<sub>m</sub></td><td>24</td><td>kPa</td><td>18</td><td>35</td><td>kPa</td></tr>
+<tr><td>Motor jacket</td><td>Wetted volume</td><td>V<sub>m</sub></td><td>0.82</td><td>L</td><td>0.75</td><td>0.90</td><td>L</td></tr>
+<tr><td>Connections</td><td>Inlet port</td><td>G 3/8</td><td>—</td><td>—</td><td>—</td><td>—</td><td>ISO 228-1</td></tr>
+<tr><td>Connections</td><td>Outlet port</td><td>G 3/8</td><td>—</td><td>—</td><td>—</td><td>—</td><td>ISO 228-1</td></tr>
+<tr><td>Connections</td><td>Leak test</td><td>p<sub>test</sub></td><td>300</td><td>kPa</td><td>—</td><td>—</td><td>60 s; ≤ 1 cm³/min</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Coolant properties assumed at 65 °C: ρ = 1 045 kg/m³; c<sub>p</sub> = 3.55 kJ/(kg·K); λ = 0.41 W/(m·K).</p>
+<h2 id="t13">T13 - Insulation system and dielectric verification</h2>
+<p>Production and type-test requirements; values are synthetic targets</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Test family</th><th scope="col">Test item</th><th scope="colgroup" colspan="2">Applied quantity</th><th scope="col">Duration</th><th scope="colgroup" colspan="2">Pass criterion</th><th scope="col">Test reference</th></tr>
+<tr><th scope="col">Test family</th><th scope="col">Test item</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Duration</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Test reference</th></tr>
+</thead><tbody>
+<tr><td>Insulation resistance</td><td>Phase-to-frame</td><td>U<sub>test</sub> = 1 000</td><td>V DC</td><td>60</td><td>≥ 100</td><td>MΩ</td><td>IEC 60034-1*</td></tr>
+<tr><td>Insulation resistance</td><td>After humidity conditioning</td><td>500</td><td>V DC</td><td>60</td><td>≥ 20</td><td>MΩ</td><td>Internal WI-EL-07</td></tr>
+<tr><td>Insulation resistance</td><td>Polarization index, PI</td><td>R<sub>10 min</sub>/R<sub>1 min</sub></td><td>—</td><td>—</td><td>≥ 2.0</td><td>—</td><td>IEEE 43*</td></tr>
+<tr><td>Withstand voltage</td><td>Stator to frame</td><td>2.4</td><td>kV AC rms</td><td>60</td><td>No breakdown</td><td>—</td><td>IEC 60034-1*</td></tr>
+<tr><td>Withstand voltage</td><td>Repetitive impulse</td><td>V<sub>pk</sub> = 1.8</td><td>kV</td><td>10⁶ pulses</td><td>No partial discharge above 10 pC</td><td>—</td><td>Internal WI-EL-12</td></tr>
+<tr><td>Partial discharge</td><td>Apparent charge</td><td>q<sub>PD</sub> ≤ 10</td><td>pC</td><td>—</td><td>≤ 10</td><td>pC</td><td>IEC 60270*</td></tr>
+<tr><td>Insulation material</td><td>Thermal class</td><td>200 (R)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>IEC 60085*</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Asterisk (*) identifies a reference family only; verify the current edition and applicability before certification or compliance claims.</p>
+<h2 id="t14">T14 - Mechanical envelope and dimensional tolerances</h2>
+<p>All dimensions in mm unless otherwise indicated; datum A = shaft axis</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Feature group</th><th scope="col">Feature / datum</th><th scope="col">Nominal</th><th scope="col">Upper dev.</th><th scope="col">Lower dev.</th><th scope="col">Inspection tool</th><th scope="colgroup" colspan="2">Geometric control</th></tr>
+<tr><th scope="col">Feature group</th><th scope="col">Feature / datum</th><th scope="col">Nominal</th><th scope="col">Upper dev.</th><th scope="col">Lower dev.</th><th scope="col">Inspection tool</th><th scope="col">Tolerance</th><th scope="col">Reference</th></tr>
+</thead><tbody>
+<tr><td>Housing</td><td>Outer diameter ØD</td><td>245.00</td><td>+0.10</td><td>−0.10</td><td>CMM</td><td>0.08</td><td>A</td></tr>
+<tr><td>Housing</td><td>Overall length L</td><td>312.0</td><td>+0.5</td><td>−0.5</td><td>Height gauge</td><td>0.20</td><td>B</td></tr>
+<tr><td>Housing</td><td>Mounting foot width</td><td>82.0</td><td>+0.2</td><td>−0.2</td><td>Caliper</td><td>0.15</td><td>A-B</td></tr>
+<tr><td>Housing</td><td>Pilot diameter ØP</td><td>160.00</td><td>+0.02</td><td>0.00</td><td>Air gauge</td><td>0.015</td><td>A</td></tr>
+<tr><td>Shaft</td><td>Shaft extension Ød</td><td>45.000</td><td>0.000</td><td>−0.016</td><td>Micrometer</td><td>0.008</td><td>A</td></tr>
+<tr><td>Shaft</td><td>Keyway width b</td><td>14.00</td><td>+0.018</td><td>0.000</td><td>Gauge blocks</td><td>0.02</td><td>A</td></tr>
+<tr><td>Shaft</td><td>Runout at bearing seat</td><td>—</td><td>—</td><td>—</td><td>Dial indicator</td><td>0.010</td><td>A</td></tr>
+<tr><td>Shaft</td><td>Threaded end</td><td>M36 × 1.5-6g</td><td>—</td><td>—</td><td>Thread ring</td><td>Class 6g</td><td>ISO metric</td></tr>
+<tr><td>Air gap</td><td>Radial air gap δ</td><td>0.90</td><td>+0.08</td><td>−0.08</td><td>Feeler / CMM</td><td>0.05</td><td>A</td></tr>
+<tr><td>Air gap</td><td>Concentricity rotor/stator</td><td>—</td><td>—</td><td>—</td><td>CMM</td><td>Ø0.04</td><td>A</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Do not infer a manufacturing tolerance from a nominal-only dimension. “—” means no separate tolerance is specified in this table.</p>
+<h2 id="t15">T15 - Bearing arrangement, fits and lubrication</h2>
+<p>Drive-end (DE) and non-drive-end (NDE) assembly data</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Assembly end</th><th scope="col">Component</th><th scope="col">Designation / value</th><th scope="col">Fit / clearance</th><th scope="col">Lubricant</th><th scope="col">Service data</th></tr>
+</thead><tbody>
+<tr><td>DE</td><td>Deep-groove bearing</td><td>6209-C3</td><td>k5 / H6</td><td>Polyurea NLGI-2</td><td>Sealed for life</td></tr>
+<tr><td>DE</td><td>Bore / OD</td><td>45 / 85 mm</td><td>k5 / H6</td><td>—</td><td>Radial load ≤ 4.2 kN</td></tr>
+<tr><td>DE</td><td>Dynamic / static rating</td><td>35.1 / 21.6 kN</td><td>—</td><td>—</td><td>C / C₀</td></tr>
+<tr><td>DE</td><td>Reference life L₁₀h</td><td>≥ 30 000 h</td><td>—</td><td>—</td><td>n = 6 000 r/min</td></tr>
+<tr><td>NDE</td><td>Cylindrical roller bearing</td><td>NU208-E</td><td>j5 / H6</td><td>Polyurea NLGI-2</td><td>Sealed for life</td></tr>
+<tr><td>NDE</td><td>Bore / OD</td><td>40 / 80 mm</td><td>j5 / H6</td><td>—</td><td>Axial float 0.4-0.7 mm</td></tr>
+<tr><td>NDE</td><td>Grease temperature</td><td>T₍g,max₎ = 150 °C</td><td>—</td><td>—</td><td>Peak 10 min</td></tr>
+<tr><td>Assembly</td><td>Axial preload (DE)</td><td>80 ± 15 N</td><td>—</td><td>—</td><td>Shim controlled; axial</td></tr>
+<tr><td>Assembly</td><td>End-play at 20 °C</td><td>0.05-0.12 mm</td><td>—</td><td>—</td><td>Axial, assembled</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Bearing life estimate follows L₁₀ = (C/P)ᵖ × 10⁶ revolutions; p = 3 for ball bearings and 10/3 for roller bearings.</p>
+<h2 id="t16">T16 - Rotor and permanent-magnet material data</h2>
+<p>Nominal supplier-grade properties; magnetic data at stated test conditions</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Material zone</th><th scope="col">Property</th><th scope="col">Symbol</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Test temperature [°C]</th><th scope="col">Tolerance / class</th><th scope="col">Remark</th></tr>
+</thead><tbody>
+<tr><td>Permanent magnet</td><td>Grade</td><td>—</td><td>N42SH</td><td>—</td><td>20</td><td>SH</td><td>Sintered NdFeB</td></tr>
+<tr><td>Permanent magnet</td><td>Remanence</td><td>B<sub>r</sub></td><td>1.30-1.34</td><td>T</td><td>20</td><td>± 0.02 T</td><td>Along easy axis</td></tr>
+<tr><td>Permanent magnet</td><td>Intrinsic coercivity</td><td>H<sub>cj</sub></td><td>≥ 1 592</td><td>kA/m</td><td>20</td><td>Minimum</td><td>Hcj</td></tr>
+<tr><td>Permanent magnet</td><td>Reversible coefficient</td><td>α<sub>Br</sub></td><td>−0.11</td><td>%/K</td><td>20-120</td><td>Typical</td><td>Reversible</td></tr>
+<tr><td>Rotor core</td><td>Steel grade</td><td>—</td><td>35PN230</td><td>—</td><td>20</td><td>M270-like</td><td>Lamination</td></tr>
+<tr><td>Rotor core</td><td>Density</td><td>ρ</td><td>7 650</td><td>kg/m³</td><td>20</td><td>± 2%</td><td>Nominal</td></tr>
+<tr><td>Rotor core</td><td>Electrical resistivity</td><td>ρ<sub>e</sub></td><td>4.7 × 10⁻⁷</td><td>Ω·m</td><td>20</td><td>± 10%</td><td>Longitudinal</td></tr>
+<tr><td>Shaft</td><td>Steel grade</td><td>—</td><td>42CrMo4 QT</td><td>—</td><td>20</td><td>EN 10083</td><td>Quenched / tempered</td></tr>
+<tr><td>Shaft</td><td>Yield strength</td><td>R<sub>p0.2</sub></td><td>≥ 750</td><td>MPa</td><td>20</td><td>Minimum</td><td>Axial specimen</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Material names and values are illustrative. Supplier certificates and batch traceability override this synthetic table.</p>
+<h2 id="t17">T17 - Vibration and acoustic order spectrum</h2>
+<p>Radial acceleration measured at housing, DE horizontal axis; no-load sweep</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Speed band</th><th scope="col">Order</th><th scope="col">Frequency relation</th><th scope="colgroup" colspan="2">Amplitude a<sub>rms</sub></th><th scope="colgroup" colspan="2">Limit</th><th scope="col">Evaluation</th></tr>
+<tr><th scope="col">Speed band</th><th scope="col">Order</th><th scope="col">Frequency relation</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Evaluation</th></tr>
+</thead><tbody>
+<tr><td>0-3 000</td><td>1×</td><td>n/60</td><td>0.42</td><td>mm/s</td><td>1.8</td><td>mm/s</td><td>RMS, 10 Hz HPF</td></tr>
+<tr><td>0-3 000</td><td>2×</td><td>2n/60</td><td>0.18</td><td>mm/s</td><td>1.0</td><td>mm/s</td><td>RMS</td></tr>
+<tr><td>0-3 000</td><td>48× slot pass</td><td>48n/60</td><td>0.09</td><td>mm/s</td><td>0.60</td><td>mm/s</td><td>Order tracking</td></tr>
+<tr><td>3 000-8 000</td><td>1×</td><td>n/60</td><td>0.61</td><td>mm/s</td><td>2.2</td><td>mm/s</td><td>10 s dwell</td></tr>
+<tr><td>3 000-8 000</td><td>2×</td><td>2n/60</td><td>0.24</td><td>mm/s</td><td>1.2</td><td>mm/s</td><td>10 s dwell</td></tr>
+<tr><td>8 000-12 000</td><td>1×</td><td>n/60</td><td>0.88</td><td>mm/s</td><td>2.8</td><td>mm/s</td><td>5 s dwell</td></tr>
+<tr><td>8 000-12 000</td><td>Electrical tone at 800 Hz</td><td>12× f<sub>e</sub></td><td>9.6</td><td>m/s²</td><td>15</td><td>m/s²</td><td>FFT, Hanning</td></tr>
+<tr><td>All speeds</td><td>Sound pressure level</td><td>L<sub>pA</sub></td><td>68.5</td><td>dB(A)</td><td>72</td><td>dB(A)</td><td>1 m, hemi-anechoic</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> The 48× slot-pass label denotes a mechanical order referenced to rotor speed; electrical orders are separately referenced to f<sub>e</sub>.</p>
+<h2 id="t18">T18 - Control and protection calibration values</h2>
+<p>FOC current loops, speed loop, modulation and fault thresholds</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Control block</th><th scope="col">Setting</th><th scope="col">Symbol</th><th scope="col">Nominal</th><th scope="col">Min.</th><th scope="col">Max.</th><th scope="col">Unit</th><th scope="col">Activation / qualifier</th></tr>
+</thead><tbody>
+<tr><td>Current loop</td><td>d-axis bandwidth</td><td>f<sub>ci,d</sub></td><td>1 200</td><td>800</td><td>1 500</td><td>Hz</td><td>Small-signal, 20 °C</td></tr>
+<tr><td>Current loop</td><td>q-axis bandwidth</td><td>f<sub>ci,q</sub></td><td>1 000</td><td>700</td><td>1 300</td><td>Hz</td><td>Small-signal</td></tr>
+<tr><td>Current loop</td><td>Current limit</td><td>I<sub>lim</sub></td><td>520</td><td>0</td><td>520</td><td>A peak</td><td>10 s maximum</td></tr>
+<tr><td>Current loop</td><td>PWM frequency</td><td>f<sub>PWM</sub></td><td>10</td><td>8</td><td>16</td><td>kHz</td><td>Center-aligned SVPWM</td></tr>
+<tr><td>Speed loop</td><td>Bandwidth</td><td>f<sub>ω</sub></td><td>18</td><td>10</td><td>25</td><td>Hz</td><td>No load inertia J = 0.042 kg·m²</td></tr>
+<tr><td>Speed loop</td><td>Overspeed trip</td><td>n<sub>trip</sub></td><td>13 500</td><td>13 000</td><td>14 000</td><td>r/min</td><td>100 ms persistence</td></tr>
+<tr><td>Speed loop</td><td>Speed ramp</td><td>dn/dt</td><td>2 500</td><td>500</td><td>4 000</td><td>r/min/s</td><td>Thermal derating may reduce</td></tr>
+<tr><td>Protection</td><td>Winding warning</td><td>T<sub>warn</sub></td><td>160</td><td>140</td><td>175</td><td>°C</td><td>Derate begins</td></tr>
+<tr><td>Protection</td><td>Winding shutdown</td><td>T<sub>trip</sub></td><td>185</td><td>175</td><td>195</td><td>°C</td><td>Latch; restart inhibited</td></tr>
+<tr><td>Protection</td><td>DC overvoltage</td><td>U<sub>OV</sub></td><td>930</td><td>910</td><td>950</td><td>V</td><td>20 ms debounce</td></tr>
+<tr><td>Protection</td><td>Resolver loss</td><td>Δθ<sub>err</sub></td><td>&gt; 12</td><td>—</td><td>—</td><td>°</td><td>Fault after 50 ms</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Controller settings are illustrative calibration values, not validated safety limits. Actual protection requires system-level hazard analysis.</p>
+<h2 id="t19">T19 - Sensor pinout and signal conditioning</h2>
+<p>Connector X3, 12-way; pin numbers are cavity identifiers</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Connector</th><th scope="col">Pin</th><th scope="col">Signal name</th><th scope="col">Direction</th><th scope="colgroup" colspan="2">Electrical level</th><th scope="col">Scaling / calibration</th><th scope="col">Diagnostic</th></tr>
+<tr><th scope="col">Connector</th><th scope="col">Pin</th><th scope="col">Signal name</th><th scope="col">Direction</th><th scope="col">Range</th><th scope="col">Nominal</th><th scope="col">Scaling / calibration</th><th scope="col">Diagnostic</th></tr>
+</thead><tbody>
+<tr><td>Resolver</td><td>1</td><td>EXC+</td><td>Output</td><td>7.0</td><td>V rms</td><td>10 kHz ± 0.5%</td><td>Amplitude check</td></tr>
+<tr><td>Resolver</td><td>2</td><td>EXC−</td><td>Output</td><td>7.0</td><td>V rms</td><td>Differential</td><td>Short detection</td></tr>
+<tr><td>Resolver</td><td>3</td><td>SIN+</td><td>Input</td><td>0.5-3.5</td><td>V diff</td><td>k = 0.50 V/V</td><td>Open / short</td></tr>
+<tr><td>Resolver</td><td>4</td><td>SIN−</td><td>Input</td><td>0.5-3.5</td><td>V diff</td><td>Offset &lt; 20 mV</td><td>Open / short</td></tr>
+<tr><td>Resolver</td><td>5</td><td>COS+</td><td>Input</td><td>0.5-3.5</td><td>V diff</td><td>k = 0.50 V/V</td><td>Open / short</td></tr>
+<tr><td>Resolver</td><td>6</td><td>COS−</td><td>Input</td><td>0.5-3.5</td><td>V diff</td><td>Offset &lt; 20 mV</td><td>Open / short</td></tr>
+<tr><td>Temperature</td><td>7</td><td>NTC-W1</td><td>Input</td><td>0-5</td><td>V</td><td>R25 = 10 kΩ; B = 3 980 K</td><td>Range check</td></tr>
+<tr><td>Temperature</td><td>8</td><td>NTC-CI</td><td>Input</td><td>0-5</td><td>V</td><td>R25 = 10 kΩ; B = 3 430 K</td><td>Range check</td></tr>
+<tr><td>Temperature</td><td>9</td><td>NTC-CO</td><td>Input</td><td>0-5</td><td>V</td><td>R25 = 10 kΩ; B = 3 430 K</td><td>Range check</td></tr>
+<tr><td>Supply / shield</td><td>10</td><td>+5V_S</td><td>Output</td><td>4.85-5.15</td><td>V DC</td><td>≤ 60 mA</td><td>Overcurrent</td></tr>
+<tr><td>Supply / shield</td><td>11</td><td>AGND</td><td>Return</td><td>—</td><td>—</td><td>Star-ground</td><td>Continuity</td></tr>
+<tr><td>Supply / shield</td><td>12</td><td>SHIELD</td><td>Chassis</td><td>—</td><td>—</td><td>360° clamp</td><td>Bond resistance &lt; 10 mΩ</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Do not connect resolver excitation pins to the 5 V sensor supply. Pin mapping is fictional and must not be used for hardware wiring.</p>
+<h2 id="t20">T20 - Environmental, reliability and interface qualification</h2>
+<p>Synthetic qualification matrix; status codes apply to this sample revision only</p>
+<p><strong>Structure note:</strong> original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr><th scope="col">Qualification group</th><th scope="col">Test / interface</th><th scope="colgroup" colspan="2">Condition</th><th scope="col">Exposure / cycles</th><th scope="col">Acceptance criterion</th><th scope="col">Sample size n</th><th scope="col">Status</th></tr>
+<tr><th scope="col">Qualification group</th><th scope="col">Test / interface</th><th scope="col">Value</th><th scope="col">Unit</th><th scope="col">Exposure / cycles</th><th scope="col">Acceptance criterion</th><th scope="col">Sample size n</th><th scope="col">Status</th></tr>
+</thead><tbody>
+<tr><td>Environment</td><td>Operating ambient</td><td>−40 to +85</td><td>°C</td><td>Continuous</td><td>Functional operation</td><td>5</td><td>PASS</td></tr>
+<tr><td>Environment</td><td>Thermal cycling</td><td>−40 ↔ +150</td><td>°C</td><td>500 cycles</td><td>No cracks; insulation drift ≤ 5%</td><td>3</td><td>PASS</td></tr>
+<tr><td>Environment</td><td>Humidity storage</td><td>85 / 85</td><td>%RH / °C</td><td>1 000 h</td><td>No corrosion</td><td>3</td><td>PASS</td></tr>
+<tr><td>Environment</td><td>Ingress protection</td><td>IP67</td><td>—</td><td>1 m / 30 min</td><td>No water ingress</td><td>3</td><td>PASS</td></tr>
+<tr><td>Mechanical</td><td>Random vibration</td><td>10-2 000</td><td>Hz; 12.5 g rms</td><td>8 h / axis</td><td>No structural cracks</td><td>3</td><td>PASS</td></tr>
+<tr><td>Mechanical</td><td>Shock</td><td>50</td><td>g; 11 ms</td><td>18 pulses</td><td>No functional damage</td><td>3</td><td>PASS</td></tr>
+<tr><td>Mechanical</td><td>Overspeed proof</td><td>15 000</td><td>r/min</td><td>2 min</td><td>No permanent deformation</td><td>2</td><td>PASS</td></tr>
+<tr><td>Reliability</td><td>Target service life</td><td>15 000</td><td>h</td><td>—</td><td>B10 ≥ 12 000 h</td><td>—</td><td>TARGET</td></tr>
+<tr><td>Reliability</td><td>Weibull shape β</td><td>1.65</td><td>—</td><td>—</td><td>Estimated β parameter</td><td>10</td><td>EST.</td></tr>
+<tr><td>Reliability</td><td>Field return target</td><td>≤ 50</td><td>ppm</td><td>per annum</td><td>≤ 50 ppm/year</td><td>—</td><td>TARGET</td></tr>
+<tr><td>Interfaces</td><td>HV connector</td><td>HVP800-2P</td><td>—</td><td>800 V DC; 350 A cont.</td><td>Rated interface</td><td>—</td><td>RELEASED</td></tr>
+<tr><td>Interfaces</td><td>LV connector</td><td>X3-12</td><td>—</td><td>12-way sealed</td><td>IP67</td><td>—</td><td>RELEASED</td></tr>
+<tr><td>Interfaces</td><td>Communication</td><td>CAN FD</td><td>2 Mbit/s</td><td>data rate</td><td>ISO 11898-1*</td><td>—</td><td>RELEASED</td></tr>
+</tbody></table></div>
+<p><strong>Engineering note:</strong> Status legend: PASS = sample met the stated criterion; TARGET = engineering target; EST. = estimated, not demonstrated. All qualification data are fictional.</p>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Kordane Drives</h4>
+      <p>Traction motors for electric vehicles and heavy-duty drivetrains.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul><li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="technology.html">Technology</a></li><li><a href="company.html">Company</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul><li>sales@kordane-drives.example</li><li>+00 000 000 0000</li></ul>
+    </div>
+    <p class="legal">Kordane Drives is a fictional company. This website and the EPM-240-8P datasheet are test material and contain made-up data. Not for engineering use.</p>
+  </div>
+</footer>
+<script>
+const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>
