@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kordane-drives.github.io/sitemap.xml
+Sitemap: https://kordane-drives.tech/sitemap.xml
