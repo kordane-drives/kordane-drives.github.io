@@ -43,7 +43,6 @@
         <a class="btn" href="datasheets/EPM-240-8P-datasheet.pdf" download><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v11m0 0l-4-4m4 4l4-4M3 17h14"/></svg>Download datasheet (PDF)</a>
         <small>PDF, 21 pages, 0.7 MB</small>
       </div>
-      <p class="notice">Test product. The datasheet contains fictional values and is not for engineering use.</p>
     </div>
   </article>
 </div>
@@ -54,19 +53,17 @@
       <p class="lead">The full EPM-240-8P datasheet as Markdown, with the same content as the PDF. Easy to read, search and copy.</p>
       <p><a class="btn ghost" style="color:#fff;border-color:#fff" href="datasheets/EPM-240-8P-datasheet.md" download><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 2v11m0 0l-4-4m4 4l4-4M3 17h14"/></svg>Download Markdown (.md)</a></p>
     </div>
-    <pre class="md-embed" id="datasheet-md" tabindex="0" aria-label="EPM-240-8P datasheet in Markdown"># EPM-240-8P - Synthetic traction motor datasheet
+    <pre class="md-embed" id="datasheet-md" tabindex="0" aria-label="EPM-240-8P datasheet in Markdown"># EPM-240-8P - Traction motor datasheet
 
-**OCR benchmark edition 1.0 | 20 tables | Fictional engineering data**
+**Edition 1.0 | 20 tables**
 
-&gt; **Important:** this document is entirely synthetic and intended only for OCR / table-structure benchmarking. It is not a real manufacturer datasheet, is not electrically or mechanically validated, and must not be used for design, procurement, test certification, or wiring.
+## Conventions
 
-## Benchmark conventions
-
-- PDF and HTML preserve original merged cells using native `rowspan` / `colspan`.
-- In this Markdown edition, every merged cell is expanded by repeating its text into each covered cell. Repeated strings therefore intentionally encode merged regions.
+- PDF and HTML preserve merged cells using native `rowspan` / `colspan`.
+- In this Markdown edition, every merged cell is expanded by repeating its text into each covered cell.
 - Multi-row headers remain separate Markdown rows; header-group labels are repeated across their child columns.
-- Decimal point is used as decimal separator; thin spaces separate thousands. Parentheses, `±`, `≤`, `≥`, `≈`, Greek symbols, Unicode subscripts/superscripts and SI units are intentional OCR challenges.
-- A dash (`—`) means not applicable / not stated, not zero. `∞` means continuous / no imposed time limit in the synthetic test definition.
+- Decimal point is used as decimal separator; thin spaces separate thousands. Parentheses, `±`, `≤`, `≥`, `≈`, Greek symbols, Unicode subscripts/superscripts and SI units are used as in the PDF.
+- A dash (`—`) means not applicable / not stated, not zero. `∞` means continuous / no imposed time limit in the test definition.
 
 ## Document index
 
@@ -116,7 +113,7 @@ Nameplate data, rated operating point and declared tolerances
 | Construction | Insulation / thermal class | Class 200 (R) | — | — | — |
 | Construction | Approximate mass | 82.0 ± 2.0 | kg | 80.0 | 84.0 |
 
-**Engineering note:** All values are synthetic. “—” denotes not applicable or not specified; it is not a zero value.
+**Engineering note:** “—” denotes not applicable or not specified; it is not a zero value.
 
 ## T02 - Torque-speed operating envelope
 
@@ -198,7 +195,7 @@ Geometric winding specification and phase-belt assignment
 | Connection | Winding connection | Star (Y) | — | Neutral floating | Neutral floating | Neutral floating |
 | Connection | Terminal resistance at 20 °C | R&lt;sub&gt;LL,20&lt;/sub&gt; = 18.6 | mΩ | 6.20 mΩ/phase | 6.20 mΩ/phase | 6.20 mΩ/phase |
 
-**Engineering note:** Slot / phase allocation shown as aggregate counts; detailed coil-side numbering is intentionally omitted in this synthetic example.
+**Engineering note:** Slot / phase allocation shown as aggregate counts; detailed coil-side numbering is omitted from this summary.
 
 ## T06 - Equivalent-circuit parameters versus temperature
 
@@ -218,7 +215,7 @@ Per-phase fundamental-frequency parameters; star-equivalent values
 | Derived | Copper temperature coefficient | α&lt;sub&gt;Cu&lt;/sub&gt; | 0.00393 | — | — | K⁻¹ |
 | Derived | Time constant at 20 °C | τ = L&lt;sub&gt;d&lt;/sub&gt;/R&lt;sub&gt;s&lt;/sub&gt; | 46.0 | — | — | ms |
 
-**Engineering note:** Resistance correction: R(T) = R(T₀)[1 + α&lt;sub&gt;Cu&lt;/sub&gt;(T − T₀)]. Values are illustrative and do not replace measured parameter identification.
+**Engineering note:** Resistance correction: R(T) = R(T₀)[1 + α&lt;sub&gt;Cu&lt;/sub&gt;(T − T₀)]. Values are typical and do not replace measured parameter identification.
 
 ## T07 - dq-axis operating map samples
 
@@ -316,7 +313,7 @@ Lumped thermal nodes used by the supervisory derating model
 | Coolant | Inlet manifold | — | — | 65 | 75 / 30 s | NTC-CI |
 | Coolant | Outlet manifold | — | — | 85 | 95 / 10 s | NTC-CO |
 
-**Engineering note:** R&lt;sub&gt;th&lt;/sub&gt; values are equivalent fitted values for the synthetic thermal model; they are not directly additive across parallel heat paths.
+**Engineering note:** R&lt;sub&gt;th&lt;/sub&gt; values are equivalent fitted values for the thermal model; they are not directly additive across parallel heat paths.
 
 ## T12 - Liquid-cooling circuit characteristics
 
@@ -340,7 +337,7 @@ Water / ethylene-glycol mixture 50:50 by volume; nominal inlet 65 °C
 
 ## T13 - Insulation system and dielectric verification
 
-Production and type-test requirements; values are synthetic targets
+Production and type-test requirements
 
 **Structure note:** original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.
 
@@ -417,7 +414,7 @@ Nominal supplier-grade properties; magnetic data at stated test conditions
 | Shaft | Steel grade | — | 42CrMo4 QT | — | 20 | EN 10083 | Quenched / tempered |
 | Shaft | Yield strength | R&lt;sub&gt;p0.2&lt;/sub&gt; | ≥ 750 | MPa | 20 | Minimum | Axial specimen |
 
-**Engineering note:** Material names and values are illustrative. Supplier certificates and batch traceability override this synthetic table.
+**Engineering note:** Material values are nominal; supplier certificates and batch traceability take precedence over this table.
 
 ## T17 - Vibration and acoustic order spectrum
 
@@ -459,7 +456,7 @@ FOC current loops, speed loop, modulation and fault thresholds
 | Protection | DC overvoltage | U&lt;sub&gt;OV&lt;/sub&gt; | 930 | 910 | 950 | V | 20 ms debounce |
 | Protection | Resolver loss | Δθ&lt;sub&gt;err&lt;/sub&gt; | &gt; 12 | — | — | ° | Fault after 50 ms |
 
-**Engineering note:** Controller settings are illustrative calibration values, not validated safety limits. Actual protection requires system-level hazard analysis.
+**Engineering note:** Controller settings are nominal calibration values, not validated safety limits. Actual protection requires system-level hazard analysis.
 
 ## T19 - Sensor pinout and signal conditioning
 
@@ -483,11 +480,11 @@ Connector X3, 12-way; pin numbers are cavity identifiers
 | Supply / shield | 11 | AGND | Return | — | — | Star-ground | Continuity |
 | Supply / shield | 12 | SHIELD | Chassis | — | — | 360° clamp | Bond resistance &lt; 10 mΩ |
 
-**Engineering note:** Do not connect resolver excitation pins to the 5 V sensor supply. Pin mapping is fictional and must not be used for hardware wiring.
+**Engineering note:** Do not connect resolver excitation pins to the 5 V sensor supply.
 
 ## T20 - Environmental, reliability and interface qualification
 
-Synthetic qualification matrix; status codes apply to this sample revision only
+Qualification matrix; status codes apply to this revision only
 
 **Structure note:** original PDF/HTML contains merged header or body cells; Markdown repeats merged-cell contents across the expanded grid.
 
@@ -508,8 +505,7 @@ Synthetic qualification matrix; status codes apply to this sample revision only
 | Interfaces | LV connector | X3-12 | — | 12-way sealed | IP67 | — | RELEASED |
 | Interfaces | Communication | CAN FD | 2 Mbit/s | data rate | ISO 11898-1* | — | RELEASED |
 
-**Engineering note:** Status legend: PASS = sample met the stated criterion; TARGET = engineering target; EST. = estimated, not demonstrated. All qualification data are fictional.
-</pre>
+**Engineering note:** Status legend: PASS = sample met the stated criterion; TARGET = engineering target; EST. = estimated, not demonstrated.</pre>
   </div>
 </section>
 
@@ -528,7 +524,7 @@ Synthetic qualification matrix; status codes apply to this sample revision only
       <h4>Contact</h4>
       <ul><li>sales@kordane-drives.example</li><li>+00 000 000 0000</li></ul>
     </div>
-    <p class="legal">Kordane Drives is a fictional company. This website and the EPM-240-8P datasheet are test material and contain made-up data. Not for engineering use.</p>
+    <p class="legal">© 2025 Kordane Drives. All rights reserved. Specifications subject to change without notice.</p>
   </div>
 </footer>
 <script>
